@@ -1,0 +1,451 @@
+:root {
+    --dark-color: #683B2B;
+    --light-color: #FFF3EA;
+    --heading-font: 'Titillium Web', sans-serif;
+    --heading-weight: 600;
+    --body-weight: 400;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+}
+
+h1, h2 {
+    font-weight: var(--heading-weight);
+}
+
+h1 {
+    font-size: 1.875rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-weight: var(--body-weight);
+    font-size: .9375rem;
+}
+
+p {
+    font-weight: var(--body-weight);
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark-color);
+    border: 0;
+    border-radius: .5rem;
+    padding: .4375rem 1.125rem .4375rem 1.125rem;
+    font-size: 1.0625rem;
+    margin-right: 3.125rem;
+    transition: .3s all ease-in-out;
+}
+
+button:hover {
+    background-color: #D49E8D;
+}
+
+/* navbar ---------------------------------------------------------------------------------*/
+
+#nav {
+    background-color: #fff3eadf;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem .625rem .75rem .625rem;
+    border: 1px solid #683B2B;
+    box-shadow: .3125rem .0625rem .8125rem #888888;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav img {
+    width: 3.125rem;
+    padding-left: 1.25rem;
+}
+
+nav a {
+    color: var(--dark-color);
+    text-decoration: none;
+    letter-spacing: .1875rem;
+    padding-right: 1.25rem;
+    transition: .3s all ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    margin-left: 2.5rem;
+}
+
+/* page 1 ---------------------------------------------------------------------------------*/
+
+
+.mission {
+    padding-top: 4.375rem;
+}
+
+.mission h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    padding-top: .9375rem;
+}
+
+.mission p {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 56.25rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../images/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 1.875rem;
+    height: 25rem;
+}
+
+.text {
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 8.125rem;
+    letter-spacing: .25rem;
+    
+}
+
+.header button {
+    font-size: 1.4375rem;
+    margin-top: .625rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2.5rem;
+}
+
+.main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    padding-top: 1.25rem;
+}
+
+.main1, .main2, .main3, .main4 {
+    border: .0625rem solid #683B2B;
+    margin: .625rem;
+}
+
+.content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .1875rem;
+    padding-top: 1.25rem;
+}
+
+.content p {
+    text-align: center;
+    padding: .9375rem;
+    padding-bottom: 3.125rem;
+}
+
+#products h1 {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.catalog h2, h3, p {
+    text-align: center;
+}
+
+.catalog h3 {
+    margin-top: 0;
+}
+
+.catalog img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.first, .second, .third {
+    margin: 0rem 1.25rem 3.75rem 1.25rem;
+}
+
+.newsletter {
+    background-color: var(--light-color)
+}
+
+.newsletter h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+    padding-top: 1.25rem;
+}
+
+.contain {
+    padding: 1.25rem;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: .75rem;
+    margin: .5rem 0;
+    display: inline-block;
+    border: .0625rem solid #683B2B;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #D49E8D
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one {
+    width: 100px;
+    margin: 1.5625rem 2.5rem 1.5625rem 2.5rem;
+}
+
+.row1 p {
+    color: var(--light-color);
+    padding-right: 1.875rem;
+    padding-top: 2.5rem;
+    font-size: .9375rem;
+}
+
+.click p {
+    text-align: center;
+    color: var(--light-color);
+    letter-spacing: .25rem;
+    margin-bottom: 0;
+}
+
+.second {
+    padding-bottom: 2.5rem;
+}
+
+
+hr {
+    margin-bottom: 2.5rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin: .3125rem;
+    font-weight: bold;
+    letter-spacing: .0625rem;
+}
+
+/* respinsive tablet  ------------------------------------------------------------------- */
+
+@media screen and (max-width: 64em) {
+    
+    h1 {
+        font-size: 1.5625rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .9375rem;
+    }
+
+    #nav {
+        width: 97vw;
+    }
+
+    nav a {
+        font-size: .9375rem;
+    }
+
+    nav button {
+        font-size: .9375rem;
+    }
+
+    .mission p {
+        font-size: .9375rem;
+        width: 36.125rem;
+    }
+
+    .text button {
+        font-size: 1rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .catalog img {
+        height: 19rem;
+    }
+
+}
+
+@media screen and (max-width: 48em) {
+
+    h1 {
+        font-size: 1.4375rem;
+        letter-spacing: .1875rem;
+    }
+
+    p {
+        font-size: .8125rem;
+    }
+
+    nav a {
+        font-size: .8125rem;
+        letter-spacing: .125rem;
+    }
+
+    nav button {
+        font-size: .75rem;
+        margin-left: 0;
+    }
+
+    .mission p {
+        width: 30rem;
+    }
+
+    .header {
+        height: 21rem;
+    }
+
+    .text {
+        padding-left: 3rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog img {
+        height: 20rem;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .one {
+        margin: auto;
+        width: 4.8125rem;
+    }
+
+    .row1 p {
+        text-align: center;
+        margin: .625rem 1.875rem .3125rem 1.875rem;
+        padding: 0;
+        font-size: .75rem;
+    }
+
+    .two {
+        height: 4.9375rem;
+        margin-top: .1875rem;
+        padding-left: 2.5rem;
+    }
+
+    hr {
+        margin-bottom: 1.5rem;
+    }
+
+    .click p {
+        font-size: .6563rem;
+        letter-spacing: .0625rem;
+    }
+    
+    .second {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 30em){
+
+    h1 {
+        font-size: 1.25rem;
+        letter-spacing: .125rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: .875rem;
+    }
+
+    nav a {
+        font-size: .6875rem;
+        letter-spacing: .125rem;
+    }
+
+    nav button {
+        font-size: .625rem;
+        margin-right: .625rem;
+    }
+
+    .mission p {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 30em){
+    .mission p {
+        width: 13rem;
+    }
+
+    .text {
+        padding-left: 2rem;
+    }
+}
+
