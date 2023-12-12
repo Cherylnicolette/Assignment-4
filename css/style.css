@@ -22,12 +22,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     font-weight: var(--body-weight);
-    font-size: .9375rem;
+    font-size: 1.25rem;
 }
 
 p {
@@ -138,7 +138,7 @@ nav button {
     margin: 2.5rem;
 }
 
-.main h1 {
+.main h2 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -164,7 +164,7 @@ nav button {
     padding-bottom: 3.125rem;
 }
 
-#products h1 {
+#products h2 {
     text-align: center;
     margin: 2.5rem auto;
 }
@@ -198,7 +198,7 @@ nav button {
     background-color: var(--light-color)
 }
 
-.newsletter h1 {
+.newsletter h2 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1875rem;
@@ -311,7 +311,7 @@ hr {
     border: .0625rem solid #683B2B;
 }
 
-.ourstory-h1 {
+.ourstory-h2 {
     background-color: var(--dark-color);
     color: var(--light-color);
     padding: 2.5rem 6.25rem 2.5rem 3.125rem;
@@ -332,7 +332,7 @@ hr {
     padding: 0rem 1.875rem 2rem 1.875rem;
 }
 
-#location h1 {
+#location h2 {
     font-size: 2.1875rem;
     padding: .625rem 0rem .625rem 0rem;
 }
@@ -342,16 +342,66 @@ hr {
     padding-bottom: .9375rem;
 }
 
+/* page 2 -------------------------------------------------------------------------------- */
+
+.product-header {
+    background-image: url(../images/Screenshot\ 2023-12-12\ at\ 13.43.12.png);
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    margin-top: 4.25rem;
+}
+
+#promotions h1 {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+.item {
+    display: grid;
+    grid-template-rows: 1fr;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.item h2, h3, p {
+    text-align: center;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.promotion-one, .promotion-two, .promotion-three, .promotion-four {
+    margin: 0rem 1.25rem 3.75rem 1.25rem;
+    padding: 0px 15px 15px 15px;
+    border: 2px solid #683B2B;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* respinsive tablet  ------------------------------------------------------------------- */
 
 @media screen and (max-width: 64em) {
     
     h1 {
-        font-size: 1.5625rem;
+        font-size: 1.6rem;
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     p {
@@ -511,16 +561,16 @@ hr {
 @media screen and (max-width: 30em){
 
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         letter-spacing: .125rem;
     }
 
     h2 {
-        font-size: 1.125rem;
+        font-size: 1.2rem;
     }
 
     p {
-        font-size: .875rem;
+        font-size: 1rem;
     }
 
     nav a {
