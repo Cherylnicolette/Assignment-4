@@ -276,6 +276,72 @@ hr {
     letter-spacing: .0625rem;
 }
 
+/* page 2 -------------------------------------------------------------------------------- */
+
+.secondheader {
+    background-image: url(../images/second-header.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-repeat: no-repeat;
+}
+
+.secondheader h1 {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 3.75rem;
+    letter-spacing: .4375rem;
+    padding-top: 10.625rem;
+    margin: auto;
+}
+
+.header-explain {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 1.25rem;
+    width: 46.875rem;
+    margin: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.ourstory-second {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    border: .0625rem solid #683B2B;
+}
+
+.ourstory-h1 {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2.5rem 6.25rem 2.5rem 3.125rem;
+    letter-spacing: .125rem;
+}
+
+.ourstory-p {
+    color: var(--dark-color);
+    padding: 3.75rem 5rem 2.5rem 3.125rem;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1.875rem 2rem 1.875rem;
+}
+
+#location h1 {
+    font-size: 2.1875rem;
+    padding: .625rem 0rem .625rem 0rem;
+}
+
+#location img {
+    height: 27.375rem;
+    padding-bottom: .9375rem;
+}
+
 /* respinsive tablet  ------------------------------------------------------------------- */
 
 @media screen and (max-width: 64em) {
@@ -327,6 +393,14 @@ hr {
 
 }
 
+@media screen and (max-width: 53em) {
+
+    h1 {
+        font-size: 1.44rem;
+    }
+
+}
+
 @media screen and (max-width: 48em) {
 
     h1 {
@@ -335,7 +409,7 @@ hr {
     }
 
     p {
-        font-size: .8125rem;
+        font-size: 1rem;
     }
 
     nav a {
@@ -407,6 +481,31 @@ hr {
         padding-bottom: 1.5rem;
     }
 
+    .secondheader h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-explain {
+        width: 30rem;
+    }
+
+    .ourstory-second {
+        grid-template-columns: 1fr;
+    }
+
+    .ourstory-p {
+        padding: 1.5rem 4rem 1.5rem 3.125rem;
+    }
+
+    .ourstory-h1 {
+        padding: 1.5rem 2.25rem 2.5rem 3.125rem;
+        text-align: center;
+    }
+
+    #location img {
+        height: 22.375rem;
+    }
+
 }
 
 @media screen and (max-width: 30em){
@@ -437,15 +536,8 @@ hr {
     .mission p {
         width: 18rem;
     }
-}
 
-@media screen and (max-width: 30em){
-    .mission p {
-        width: 13rem;
-    }
-
-    .text {
-        padding-left: 2rem;
+    .header-explain {
+        width: 20rem;
     }
 }
-
